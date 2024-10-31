@@ -19,13 +19,14 @@ public class SistemaMensagem implements CommandLineRunner{
     // private List<Long> telefones = new ArrayList<>(Arrays.asList(new Long[]{11956781254L}));
 
     //a forma com Value
-
+    //dentro de uma string eu tenho uma expressao
     @Value("${nome}")
     private String nome;
     @Value("${email}")
     private String email;
     @Value("${telefones}")
-    private List<Long> telefones = new ArrayList<>(Arrays.asList(new Long[]{11956781254L}));
+    private List<Long> telefones = 
+                    new ArrayList<>(Arrays.asList(new Long[]{11956781254L})); //trabalha junt com o aplication propetie em resources 
 
 
     @Override
